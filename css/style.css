@@ -31,7 +31,6 @@ a {
 	max-width: 1341px;
 	margin: 0 auto;
 	position: relative;
-	overflow: hidden;
 }
 
 .container-fluid:after .bg-Blue:after {
@@ -101,7 +100,6 @@ a {
 .navbar {
 	position: relative;
 	width: 100%;
-	overflow: hidden;
 }
 
 .navbar:after {
@@ -111,11 +109,14 @@ a {
 }
 
 .navbar_padding {
-	padding: 10px;
 	position: relative;
-	overflow: hidden;
+	padding: 10px;
 }
-
+.navbar_padding:after {
+	display: block;
+	clear: both;
+	content: " ";
+}
 .logo {
 	max-width: 140px;
 	float: left;
@@ -986,10 +987,12 @@ footer {
 	.menu {
 		width: calc(100% - 10px);
 		right: 0;
-		position: relative;
+		position: absolute;
+		top: 55px;
 		margin: 0px 5px;
 		background: #f1f1f1;
 		display: none;
+		z-index:99;
 	}
 	.menu a {
 		display: block;
