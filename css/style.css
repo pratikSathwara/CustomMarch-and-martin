@@ -181,6 +181,7 @@ a {
 
 .quote a:hover {
 	background-color: #0266ca;
+	color: #fff;
 }
 
 .sticky {
@@ -436,7 +437,8 @@ a {
 .box_model {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-	padding: 0px 10px;
+	
+	    grid-gap: 10px;
 }
 
 .Commitment_bg h2 {
@@ -932,7 +934,7 @@ footer {
 		max-width: 100px;
 	}
 	.press {
-		top: 8px;
+		top: 20px;
 	}
 	.banner_text {
 		text-align: center;
@@ -985,11 +987,11 @@ footer {
 		display: inline-block;
 	}
 	.menu {
-		width: calc(100% - 10px);
+		width:100%;
 		right: 0;
 		position: absolute;
-		top: 55px;
-		margin: 0px 5px;
+		top: 61px;
+		
 		background: #f1f1f1;
 		display: none;
 		z-index:99;
@@ -1058,7 +1060,7 @@ footer {
 		height: 50px;
 	}
 	.events_box p {
-		font-size: 19px;
+		font-size: 17px;
 		padding: 0;
 		margin: 0;
 	}
@@ -1074,6 +1076,7 @@ footer {
 		margin-bottom: 50px;
 	}
 	.Spray_Foam {
+		    box-shadow: 5px 5px 20px #ddd;
 		margin: 40px 10px;
 		grid-template-columns: 100%;
 	}
@@ -1113,15 +1116,17 @@ footer {
 		margin-top: 10px;
 	}
 	.product_view_img {
+		width: 90px;
+		height: 90px;
 		margin: 0 auto;
 		text-align: center;
 		margin-bottom: 20px;
 	}
 	.product_view_btn {
 		margin: 0 auto;
-		line-height: 45px;
-		width: 180px;
-		height: 45px;
+		    line-height: 40px;
+    width: 160px;
+    height: 40px;
 	}
 	.product_view_btn a {
 		padding: 10px 10px;
@@ -1166,13 +1171,23 @@ footer {
 	.f_logo {
 		text-align: center;
 	}
+	.client{
+		padding-bottom: 50px;
+	}
 	.client_box {
 		padding: 50px 10px 30px 10px;
+		    margin: 120px auto 30px;
 	}
 	.owl-carousel .owl-item .client_box img {
-		top: -12%;
-		width: 100px;
-		height: 100px;
+		    top: -9%;
+    width: 90px;
+    height: 90px;
+	}
+	.client_box p{
+		    font-size: 14px;
+	}
+	.client_quote{
+		display: none;
 	}
 	footer {
 		padding: 20px 0px 20px 0px;
@@ -1224,11 +1239,14 @@ footer {
 		height: 500px;
 	}
 	.menu {
-		width: 100%;
+		width:100%;
 		right: 0;
-		overflow: hidden;
+		position: absolute;
+		top: 61px;
+		
 		background: #f1f1f1;
 		display: none;
+		z-index:99;
 	}
 	.menu a {
 		display: block;
@@ -1361,11 +1379,14 @@ footer {
 		max-width: 130px;
 	}
 	.menu {
-		width: 100%;
+		width:100%;
 		right: 0;
-		overflow: hidden;
+		position: absolute;
+		top: 61px;
+		
 		background: #f1f1f1;
 		display: none;
+		z-index:99;
 	}
 	.menu a {
 		display: block;
